@@ -1,0 +1,159 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <title>sample styled web page</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+        }
+        header{
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section{
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0010px rgba (0,0,0,0.1);
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            width: 500px;
+        }
+        ul{
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        li{
+            margin: 8px 0;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table,th,td{
+            border: 1px solid #ccc;
+        }
+        th{
+            background: #3428db;
+            color: white;
+            padding: 10px;
+        }
+        td{
+            padding-left: 10px;
+            text-align: center;
+        }
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input, select, textarea{
+            margin: 8px 0 15px 0;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type ="submit"]{
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input [type="submit"]: hover{
+            background-color:#27ae60;
+        }
+        footer{
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>Welcome to My sample web page</h1>
+</header>
+<section>
+    <h2>Beautiful Nature Image</h2>
+    <img src="natureimage.png" alt="natureimage">
+</section>
+<section>
+    <h2>My Fevorate Hobbies</h2>
+    <ul>
+        <li>Watching movie</li>
+        <li>Traveling</li>
+        <li>Photography</li>
+        <li>Sports</li>
+    </ul>
+</section>
+<section>
+<h2>Weekly study time table</h2>
+<table>
+    <tr>
+    <th>Day</th>
+    <th>Subject</th>
+    <th>Hours</th>
+    </tr>
+    <tr>
+        <td>sunday</td>
+        <td>Web Technology</td>
+        <td>2 hour</td>
+    </tr>
+    <tr>
+        <td>Monday</td>
+        <td>OOP</td>
+        <td>2 hour</td>
+    </tr>
+    <tr>
+        <td>Tuesday</td>
+        <td>Statistics</td>
+        <td>2 hour</td>
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        <td>DSA</td>
+        <td>2 hour</td>
+    </tr>
+    <tr>
+        <td>Thursday</td>
+        <td>SAD</td>
+        <td>2 hour</td>
+    </tr>
+</table>
+</section>
+<section>
+    <h2>Contat form</h2>
+    <form>
+        <label>Nmae:</label>
+        <input type="text" name="name" required>
+        <label>email:</label>
+        <input type="email" name="email">
+        <label>Gender:</label>
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+        <label>Message:</label>
+        <textarea rows="4"></textarea>
+        <input type="Submit" value="Submit">
+    </form>
+</section>
+</footer>
+</body>
+</html>

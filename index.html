@@ -6,6 +6,140 @@
 <title>Birthday Surprise 🎂</title>
 
 <style>
+    /* =========================
+   MOBILE FRIENDLY DESIGN
+   ========================= */
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container,
+.card,
+.main-card {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    max-width: 90%;
+    min-height: 48px;
+    padding: 12px 22px;
+    font-size: 16px;
+}
+
+/* 📱 Phone */
+@media (max-width: 600px) {
+
+    body {
+        min-height: 100vh;
+        padding: 15px 0;
+    }
+
+    .container,
+    .card,
+    .main-card {
+        width: 92%;
+        padding: 20px 15px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .name {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #wishMessage {
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 0 5px;
+    }
+
+    button {
+        width: 85%;
+        font-size: 16px;
+        padding: 13px 15px;
+        margin: 10px auto;
+    }
+
+    .cake {
+        transform: scale(0.85);
+        margin: 0 auto;
+    }
+
+    .balloon {
+        transform: scale(0.75);
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 10px;
+        line-height: 1.5;
+    }
+}
+
+/* 📱 Very small phones */
+@media (max-width: 380px) {
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    .container,
+    .card,
+    .main-card {
+        width: 94%;
+        padding: 16px 12px;
+    }
+
+    #wishMessage {
+        font-size: 14px;
+    }
+
+    button {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .cake {
+        transform: scale(0.72);
+    }
+}
 * {
     margin: 0;
     padding: 0;
